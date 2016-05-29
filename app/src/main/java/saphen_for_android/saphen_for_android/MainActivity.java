@@ -1,5 +1,6 @@
 package saphen_for_android.saphen_for_android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -48,5 +49,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void buttonClick(View view)
+    {
+        if(view.getId() == R.id.the_login)
+        {
+            Intent curr = new Intent(MainActivity.this, Display.class);
+            startActivity(curr);
+        }
     }
 }
