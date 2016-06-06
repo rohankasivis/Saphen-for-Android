@@ -57,7 +57,21 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/the_login"
-        android:layout_marginTop="87dp"
+        android:layout_marginTop="59dp"
+        android:onClick="onButtonClick"
         android:layout_below="@+id/the_password"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue as Guest"
+        android:id="@+id/guest_button"
+        android:layout_below="@+id/the_login"
+        android:layout_marginTop="59dp"
+        android:layout_alignRight="@+id/the_password"
+        android:layout_alignEnd="@+id/the_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onButtonClick" />
 </RelativeLayout>

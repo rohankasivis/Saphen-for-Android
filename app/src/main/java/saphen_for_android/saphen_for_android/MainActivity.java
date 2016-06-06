@@ -51,11 +51,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void buttonClick(View view)
+    public void onButtonClick(View view)
     {
-        if(view.getId() == R.id.the_login)
+        if(view.getId() == R.id.guest_button)
         {
-            Intent curr = new Intent(MainActivity.this, Display.class);
+            Intent curr = new Intent(MainActivity.this, HomePage.class);
             startActivity(curr);
         }
     }
