@@ -58,5 +58,10 @@ public class MainActivity extends AppCompatActivity {
             Intent curr = new Intent(MainActivity.this, HomePage.class);
             startActivity(curr);
         }
+        else if(view.getId() == R.id.the_login)
+        {
+            Intent intent = new Intent(MainActivity.this, StatisticsActivity.class);
+            startActivity(intent);
+        }
     }
 }
